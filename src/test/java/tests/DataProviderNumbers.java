@@ -3,6 +3,7 @@ package tests;
 import org.testng.annotations.DataProvider;
 
 public class DataProviderNumbers {
+
     @DataProvider(name = "IntegerSumProvider")
     public Object[][] IntegerSumData() {
 
