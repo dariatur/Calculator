@@ -1,0 +1,260 @@
+<html>
+<head>
+<title>TestNG:  Command line test</title>
+<link href="../testng.css" rel="stylesheet" type="text/css" />
+<link href="../my-testng.css" rel="stylesheet" type="text/css" />
+
+<style type="text/css">
+.log { display: none;} 
+.stack-trace { display: none;} 
+</style>
+<script type="text/javascript">
+<!--
+function flip(e) {
+  current = e.style.display;
+  if (current == 'block') {
+    e.style.display = 'none';
+    return 0;
+  }
+  else {
+    e.style.display = 'block';
+    return 1;
+  }
+}
+
+function toggleBox(szDivId, elem, msg1, msg2)
+{
+  var res = -1;  if (document.getElementById) {
+    res = flip(document.getElementById(szDivId));
+  }
+  else if (document.all) {
+    // this is the way old msie versions work
+    res = flip(document.all[szDivId]);
+  }
+  if(elem) {
+    if(res == 0) elem.innerHTML = msg1; else elem.innerHTML = msg2;
+  }
+
+}
+
+function toggleAllBoxes() {
+  if (document.getElementsByTagName) {
+    d = document.getElementsByTagName('div');
+    for (i = 0; i < d.length; i++) {
+      if (d[i].className == 'log') {
+        flip(d[i]);
+      }
+    }
+  }
+}
+
+// -->
+</script>
+
+</head>
+<body>
+<h2 align='center'>Command line test</h2><table border='1' align="center">
+<tr>
+<td>Tests passed/Failed/Skipped:</td><td>36/0/0</td>
+</tr><tr>
+<td>Started on:</td><td>Tue Feb 18 19:01:47 CET 2025</td>
+</tr>
+<tr><td>Total time:</td><td>0 seconds (313 ms)</td>
+</tr><tr>
+<td>Included groups:</td><td></td>
+</tr><tr>
+<td>Excluded groups:</td><td></td>
+</tr>
+</table><p/>
+<small><i>(Hover the method name to see the test class name)</i></small><p/>
+<table width='100%' border='1' class='invocation-passed'>
+<tr><td colspan='4' align='center'><b>PASSED TESTS</b></td></tr>
+<tr><td><b>Test method</b></td>
+<td><b>Attribute(s)</b></td>
+<td width="30%"><b>Exception</b></td>
+<td width="10%"><b>Time (seconds)</b></td>
+<td><b>Instance</b></td>
+</tr>
+<tr>
+<td title='tests.SumTest.sumDoubles()'><b>sumDoubles</b><br>Test class: tests.SumTest<br>Test method: check sum for doubles<br>Parameters: [Ljava.lang.Number;@49c386c8, 8.5</td>
+<td></td>
+<td>0</td>
+<td>tests.SumTest@15bfd87</td></tr>
+<tr>
+<td title='tests.SumTest.sumDifferentTypes()'><b>sumDifferentTypes</b><br>Test class: tests.SumTest<br>Test method: check sum for mixed types<br>Parameters: [Ljava.lang.Number;@12e61fe6, 23.1</td>
+<td></td>
+<td>0</td>
+<td>tests.SumTest@15bfd87</td></tr>
+<tr>
+<td title='tests.MultiplyTest.multiplyDoubles()'><b>multiplyDoubles</b><br>Test class: tests.MultiplyTest<br>Test method: check multiply for doubles<br>Parameters: [Ljava.lang.Number;@54c562f7, 588.0</td>
+<td></td>
+<td>0</td>
+<td>tests.MultiplyTest@5427c60c</td></tr>
+<tr>
+<td title='tests.DeductTest.deductDifferentTypes()'><b>deductDifferentTypes</b><br>Test class: tests.DeductTest<br>Test method: check deduction for mixed types<br>Parameters: [Ljava.lang.Number;@6b19b79, -21.1</td>
+<td></td>
+<td>0</td>
+<td>tests.DeductTest@4cf4d528</td></tr>
+<tr>
+<td title='tests.SumTest.sumDifferentTypes()'><b>sumDifferentTypes</b><br>Test class: tests.SumTest<br>Test method: check sum for mixed types<br>Parameters: [Ljava.lang.Number;@6ac13091, 8.5</td>
+<td></td>
+<td>0</td>
+<td>tests.SumTest@15bfd87</td></tr>
+<tr>
+<td title='tests.DeductTest.deductDifferentTypes()'><b>deductDifferentTypes</b><br>Test class: tests.DeductTest<br>Test method: check deduction for mixed types<br>Parameters: [Ljava.lang.Number;@5bfa9431, -0.9</td>
+<td></td>
+<td>0</td>
+<td>tests.DeductTest@4cf4d528</td></tr>
+<tr>
+<td title='tests.DivideTest.multiplyDoubles()'><b>multiplyDoubles</b><br>Test class: tests.DivideTest<br>Test method: check divide for doubles<br>Parameters: [Ljava.lang.Number;@460d0a57, 0.0017</td>
+<td></td>
+<td>0</td>
+<td>tests.DivideTest@543e710e</td></tr>
+<tr>
+<td title='tests.DivideTest.multiplyIntegers()'><b>multiplyIntegers</b><br>Test class: tests.DivideTest<br>Test method: check divide for integers<br>Parameters: [Ljava.lang.Number;@78b66d36, -0.3334</td>
+<td></td>
+<td>0</td>
+<td>tests.DivideTest@543e710e</td></tr>
+<tr>
+<td title='tests.DivideTest.multiplyIntegers()'><b>multiplyIntegers</b><br>Test class: tests.DivideTest<br>Test method: check divide for integers<br>Parameters: [Ljava.lang.Number;@1c93084c, 0.0017</td>
+<td></td>
+<td>0</td>
+<td>tests.DivideTest@543e710e</td></tr>
+<tr>
+<td title='tests.MultiplyTest.multiplyDifferentTypes()'><b>multiplyDifferentTypes</b><br>Test class: tests.MultiplyTest<br>Test method: check multiply for mixed types<br>Parameters: [Ljava.lang.Number;@47542153, 588.0</td>
+<td></td>
+<td>0</td>
+<td>tests.MultiplyTest@5427c60c</td></tr>
+<tr>
+<td title='tests.DeductTest.deductIntegers()'><b>deductIntegers</b><br>Test class: tests.DeductTest<br>Test method: check deduction for integers<br>Parameters: [Ljava.lang.Number;@27ae2fd0, 8</td>
+<td></td>
+<td>0</td>
+<td>tests.DeductTest@4cf4d528</td></tr>
+<tr>
+<td title='tests.SumTest.sumIntegers()'><b>sumIntegers</b><br>Test class: tests.SumTest<br>Test method: check sum for integers<br>Parameters: [Ljava.lang.Number;@4b5a5ed1, 23</td>
+<td></td>
+<td>0</td>
+<td>tests.SumTest@15bfd87</td></tr>
+<tr>
+<td title='tests.DivideTest.multiplyDifferentTypes()'><b>multiplyDifferentTypes</b><br>Test class: tests.DivideTest<br>Test method: check divide for different types<br>Parameters: [Ljava.lang.Number;@65466a6a, 0.0017</td>
+<td></td>
+<td>0</td>
+<td>tests.DivideTest@543e710e</td></tr>
+<tr>
+<td title='tests.DeductTest.deductDoubles()'><b>deductDoubles</b><br>Test class: tests.DeductTest<br>Test method: check deduction for doubles<br>Parameters: [Ljava.lang.Number;@16e7dcfd, 5.4</td>
+<td></td>
+<td>0</td>
+<td>tests.DeductTest@4cf4d528</td></tr>
+<tr>
+<td title='tests.DivideTest.multiplyDifferentTypes()'><b>multiplyDifferentTypes</b><br>Test class: tests.DivideTest<br>Test method: check divide for different types<br>Parameters: [Ljava.lang.Number;@79b06cab, 0.0</td>
+<td></td>
+<td>0</td>
+<td>tests.DivideTest@543e710e</td></tr>
+<tr>
+<td title='tests.SumTest.sumDoubles()'><b>sumDoubles</b><br>Test class: tests.SumTest<br>Test method: check sum for doubles<br>Parameters: [Ljava.lang.Number;@5ccddd20, 47.5</td>
+<td></td>
+<td>0</td>
+<td>tests.SumTest@15bfd87</td></tr>
+<tr>
+<td title='tests.DeductTest.deductDifferentTypes()'><b>deductDifferentTypes</b><br>Test class: tests.DeductTest<br>Test method: check deduction for mixed types<br>Parameters: [Ljava.lang.Number;@4fe767f3, 8.5</td>
+<td></td>
+<td>0</td>
+<td>tests.DeductTest@4cf4d528</td></tr>
+<tr>
+<td title='tests.DivideTest.multiplyDifferentTypes()'><b>multiplyDifferentTypes</b><br>Test class: tests.DivideTest<br>Test method: check divide for different types<br>Parameters: [Ljava.lang.Number;@2ea227af, -0.3077</td>
+<td></td>
+<td>0</td>
+<td>tests.DivideTest@543e710e</td></tr>
+<tr>
+<td title='tests.SumTest.sumDifferentTypes()'><b>sumDifferentTypes</b><br>Test class: tests.SumTest<br>Test method: check sum for mixed types<br>Parameters: [Ljava.lang.Number;@161479c6, 46.5</td>
+<td></td>
+<td>0</td>
+<td>tests.SumTest@15bfd87</td></tr>
+<tr>
+<td title='tests.SumTest.sumDoubles()'><b>sumDoubles</b><br>Test class: tests.SumTest<br>Test method: check sum for doubles<br>Parameters: [Ljava.lang.Number;@2b6faea6, 24.6</td>
+<td></td>
+<td>0</td>
+<td>tests.SumTest@15bfd87</td></tr>
+<tr>
+<td title='tests.SumTest.sumIntegers()'><b>sumIntegers</b><br>Test class: tests.SumTest<br>Test method: check sum for integers<br>Parameters: [Ljava.lang.Number;@3967e60c, 8</td>
+<td></td>
+<td>0</td>
+<td>tests.SumTest@15bfd87</td></tr>
+<tr>
+<td title='tests.DivideTest.multiplyIntegers()'><b>multiplyIntegers</b><br>Test class: tests.DivideTest<br>Test method: check divide for integers<br>Parameters: [Ljava.lang.Number;@22a637e7, 0.0</td>
+<td></td>
+<td>0</td>
+<td>tests.DivideTest@543e710e</td></tr>
+<tr>
+<td title='tests.DeductTest.deductDoubles()'><b>deductDoubles</b><br>Test class: tests.DeductTest<br>Test method: check deduction for doubles<br>Parameters: [Ljava.lang.Number;@3901d134, -8.9</td>
+<td></td>
+<td>0</td>
+<td>tests.DeductTest@4cf4d528</td></tr>
+<tr>
+<td title='tests.MultiplyTest.multiplyDoubles()'><b>multiplyDoubles</b><br>Test class: tests.MultiplyTest<br>Test method: check multiply for doubles<br>Parameters: [Ljava.lang.Number;@d4342c2, 265070.4</td>
+<td></td>
+<td>0</td>
+<td>tests.MultiplyTest@5427c60c</td></tr>
+<tr>
+<td title='tests.DeductTest.deductIntegers()'><b>deductIntegers</b><br>Test class: tests.DeductTest<br>Test method: check deduction for integers<br>Parameters: [Ljava.lang.Number;@d706f19, -21</td>
+<td></td>
+<td>0</td>
+<td>tests.DeductTest@4cf4d528</td></tr>
+<tr>
+<td title='tests.MultiplyTest.multiplyDoubles()'><b>multiplyDoubles</b><br>Test class: tests.MultiplyTest<br>Test method: check multiply for doubles<br>Parameters: [Ljava.lang.Number;@43301423, -13.0</td>
+<td></td>
+<td>0</td>
+<td>tests.MultiplyTest@5427c60c</td></tr>
+<tr>
+<td title='tests.DeductTest.deductIntegers()'><b>deductIntegers</b><br>Test class: tests.DeductTest<br>Test method: check deduction for integers<br>Parameters: [Ljava.lang.Number;@147ed70f, -1</td>
+<td></td>
+<td>0</td>
+<td>tests.DeductTest@4cf4d528</td></tr>
+<tr>
+<td title='tests.MultiplyTest.multiplyDifferentTypes()'><b>multiplyDifferentTypes</b><br>Test class: tests.MultiplyTest<br>Test method: check multiply for mixed types<br>Parameters: [Ljava.lang.Number;@25d250c6, 265070.4</td>
+<td></td>
+<td>0</td>
+<td>tests.MultiplyTest@5427c60c</td></tr>
+<tr>
+<td title='tests.MultiplyTest.multiplyIntegers()'><b>multiplyIntegers</b><br>Test class: tests.MultiplyTest<br>Test method: check multiply for integers<br>Parameters: [Ljava.lang.Number;@71b1176b, -12</td>
+<td></td>
+<td>0</td>
+<td>tests.MultiplyTest@5427c60c</td></tr>
+<tr>
+<td title='tests.MultiplyTest.multiplyIntegers()'><b>multiplyIntegers</b><br>Test class: tests.MultiplyTest<br>Test method: check multiply for integers<br>Parameters: [Ljava.lang.Number;@78aab498, 204120</td>
+<td></td>
+<td>0</td>
+<td>tests.MultiplyTest@5427c60c</td></tr>
+<tr>
+<td title='tests.DivideTest.multiplyDoubles()'><b>multiplyDoubles</b><br>Test class: tests.DivideTest<br>Test method: check divide for doubles<br>Parameters: [Ljava.lang.Number;@ef9296d, 0.0</td>
+<td></td>
+<td>0</td>
+<td>tests.DivideTest@543e710e</td></tr>
+<tr>
+<td title='tests.DeductTest.deductDoubles()'><b>deductDoubles</b><br>Test class: tests.DeductTest<br>Test method: check deduction for doubles<br>Parameters: [Ljava.lang.Number;@7b227d8d, 1.9</td>
+<td></td>
+<td>0</td>
+<td>tests.DeductTest@4cf4d528</td></tr>
+<tr>
+<td title='tests.MultiplyTest.multiplyDifferentTypes()'><b>multiplyDifferentTypes</b><br>Test class: tests.MultiplyTest<br>Test method: check multiply for mixed types<br>Parameters: [Ljava.lang.Number;@56a6d5a6, -13</td>
+<td></td>
+<td>0</td>
+<td>tests.MultiplyTest@5427c60c</td></tr>
+<tr>
+<td title='tests.MultiplyTest.multiplyIntegers()'><b>multiplyIntegers</b><br>Test class: tests.MultiplyTest<br>Test method: check multiply for integers<br>Parameters: [Ljava.lang.Number;@419c5f1a, 560</td>
+<td></td>
+<td>0</td>
+<td>tests.MultiplyTest@5427c60c</td></tr>
+<tr>
+<td title='tests.SumTest.sumIntegers()'><b>sumIntegers</b><br>Test class: tests.SumTest<br>Test method: check sum for integers<br>Parameters: [Ljava.lang.Number;@7adda9cc, 45</td>
+<td></td>
+<td>0</td>
+<td>tests.SumTest@15bfd87</td></tr>
+<tr>
+<td title='tests.DivideTest.multiplyDoubles()'><b>multiplyDoubles</b><br>Test class: tests.DivideTest<br>Test method: check divide for doubles<br>Parameters: [Ljava.lang.Number;@149e0f5d, -0.3077</td>
+<td></td>
+<td>0</td>
+<td>tests.DivideTest@543e710e</td></tr>
+</table><p>
+</body>
+</html>
